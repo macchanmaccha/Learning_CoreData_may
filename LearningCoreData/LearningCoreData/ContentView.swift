@@ -10,17 +10,16 @@ import CoreData
 
 struct ContentView: View {
     @Environment(\.managedObjectContext) private var viewContext
-    
     @FetchRequest(
         entity: Memo.entity(),
         sortDescriptors: [NSSortDescriptor(key: "updatedAt", ascending: false)],
         animation: .default)
-    var fetchMemoList: FetchedResults<Memo>
+    var fetchedMemoList: FetchedResults<Memo>
     
     var body: some View {
         NavigationStack {
             List {
-                ForEach(fetchMemoList) { memo in
+                ForEach(fetchedMemoList) { memo in
                     VStack {
                         Text(memo.title ?? "")
                             .font(.title)
