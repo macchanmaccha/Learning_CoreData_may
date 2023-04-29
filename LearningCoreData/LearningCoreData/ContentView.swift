@@ -15,7 +15,6 @@ struct ContentView: View {
         sortDescriptors: [NSSortDescriptor(key: "updatedAt", ascending: false)],
         animation: .default)
     var fetchedMemoList: FetchedResults<Memo>
-    
     var body: some View {
         NavigationStack {
             List {
@@ -39,6 +38,14 @@ struct ContentView: View {
             }
             .navigationTitle("メモ")
             .navigationBarTitleDisplayMode(.automatic)
+            // ツールバー
+            .toolbar {
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink(destination: AddMemoView()) {
+                        Text("新規作成")
+                    } // NavigationLinkここまで
+                } // ToolbarItemここまで
+            } // .toolbarここまで
         } // NavigationStackここまで
     } // bodyここまで
 } // ContentViewここまで
