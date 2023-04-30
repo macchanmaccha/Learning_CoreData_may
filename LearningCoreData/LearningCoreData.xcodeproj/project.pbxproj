@@ -20,6 +20,8 @@
 		1811EF0529F93C8400C8E3BB /* Memo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EF0129F93C8400C8E3BB /* Memo+CoreDataProperties.swift */; };
 		1811EF0729FCBA4C00C8E3BB /* AddMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EF0629FCBA4B00C8E3BB /* AddMemoView.swift */; };
 		1811EF0829FCBA4C00C8E3BB /* AddMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EF0629FCBA4B00C8E3BB /* AddMemoView.swift */; };
+		1811EF0B29FE28FB00C8E3BB /* EditMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EF0A29FE28FB00C8E3BB /* EditMemoView.swift */; };
+		1811EF0C29FE28FB00C8E3BB /* EditMemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1811EF0A29FE28FB00C8E3BB /* EditMemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,7 @@
 		1811EF0029F93C8400C8E3BB /* Memo+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataClass.swift"; sourceTree = "<group>"; };
 		1811EF0129F93C8400C8E3BB /* Memo+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Memo+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1811EF0629FCBA4B00C8E3BB /* AddMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMemoView.swift; sourceTree = "<group>"; };
+		1811EF0A29FE28FB00C8E3BB /* EditMemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditMemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,7 @@
 				1811EEE029F9359000C8E3BB /* LearningCoreDataApp.swift */,
 				1811EEE229F9359000C8E3BB /* ContentView.swift */,
 				1811EF0629FCBA4B00C8E3BB /* AddMemoView.swift */,
+				1811EF0A29FE28FB00C8E3BB /* EditMemoView.swift */,
 				1811EEE429F9359500C8E3BB /* Assets.xcassets */,
 				1811EEE929F9359500C8E3BB /* Persistence.swift */,
 				1811EEEB29F9359500C8E3BB /* LearningCoreData.xcdatamodeld */,
@@ -241,6 +245,7 @@
 				1811EF0229F93C8400C8E3BB /* Memo+CoreDataClass.swift in Sources */,
 				1811EEED29F9359500C8E3BB /* LearningCoreData.xcdatamodeld in Sources */,
 				1811EEEA29F9359500C8E3BB /* Persistence.swift in Sources */,
+				1811EF0B29FE28FB00C8E3BB /* EditMemoView.swift in Sources */,
 				1811EF0429F93C8400C8E3BB /* Memo+CoreDataProperties.swift in Sources */,
 				1811EEE329F9359000C8E3BB /* ContentView.swift in Sources */,
 				1811EEE129F9359000C8E3BB /* LearningCoreDataApp.swift in Sources */,
@@ -252,6 +257,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1811EF0529F93C8400C8E3BB /* Memo+CoreDataProperties.swift in Sources */,
+				1811EF0C29FE28FB00C8E3BB /* EditMemoView.swift in Sources */,
 				1811EEFA29F9374A00C8E3BB /* LearningCoreDataTests.swift in Sources */,
 				1811EF0829FCBA4C00C8E3BB /* AddMemoView.swift in Sources */,
 				1811EF0329F93C8400C8E3BB /* Memo+CoreDataClass.swift in Sources */,
