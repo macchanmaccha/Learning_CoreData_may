@@ -29,7 +29,6 @@ struct AddMemoView: View {
             } // ToolbarItemここまで
         } // .toolbarここまで
     } // bodyここまで
-    
     // 保存ボタン押下時の処理
     private func addMemo() {
         let memo = Memo(context: viewContext)

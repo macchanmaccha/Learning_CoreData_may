@@ -34,8 +34,9 @@ struct ContentView: View {
                             Spacer()
                         } // HStackここまで
                     } // VStackここまで
-                }
-            }
+                } // ForEachここまで
+                .onDelete(perform: deleteMemo)
+            } // Listここまで
             .navigationTitle("メモ")
             .navigationBarTitleDisplayMode(.automatic)
             // ツールバー
@@ -48,6 +49,14 @@ struct ContentView: View {
             } // .toolbarここまで
         } // NavigationStackここまで
     } // bodyここまで
+    // 削除時の処理
+    private func deleteMemo(offsets: IndexSet) {
+        offsets.forEach { index in
+            viewContext.delete(fetchedMemoList[index])
+        } // offsets.forEachここまで
+        // 保存を忘れない
+        try? viewContext.save()
+    } // func deleteMemoここまで
 } // ContentViewここまで
 
 struct ContentView_Previews: PreviewProvider {
